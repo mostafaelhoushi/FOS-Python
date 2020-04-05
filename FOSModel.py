@@ -18,7 +18,7 @@ class FOSModel:
     
     def __init__(self, max_delay_in_input, max_delay_in_output, max_order, max_m, mse_reduction_threshold, mse_threshold=0):
         
-        if max_delay_in_input < 0 or max_delay_in_output < 1 or max_order < 1 or max_m < 1 or mse_reduction_threshold < 0 or mse_threshold < 0:
+        if max_delay_in_input < 0 or max_delay_in_output < 0 or max_order < 1 or max_m < 1 or mse_reduction_threshold < 0 or mse_threshold < 0:
             raise ValueError("illegal parameter!")
         
         self.MAX_M = max_m
